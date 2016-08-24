@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<configuration>
+    <!--property>
+        <name>dt.operator.input.prop.directory</name>
+        <value>file://home/divya/src/divya/dataTorrent</value>
+    </property-->
+    <property>
+        <name>dt.operator.input.prop.topic</name>
+        <value>divya</value>
+    </property>
+    <property>
+        <name>dt.operator.input.prop.zookeeper</name>
+        <value>node28.morado.com:2181</value>
+    </property>
+
+    <property>
+        <name>dt.operator.output.prop.store.databaseDriver</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property>
+        <name>dt.operator.output.prop.store.databaseUrl</name>
+        <value>jdbc:mysql://node28.morado.com/meetup?user=meetup&amp;password=meetup</value>
+    </property>
+    <property>
+        <name>dt.operator.output.prop.tableName</name>
+        <value>divya</value>
+    </property>
+    <property>
+        <name>dt.operator.topN.prop.n</name>
+        <value>10</value>
+    </property>
+    <property>
+        <name>dt.operator.server.prop.embeddableQueryInfoProvider.topic</name>
+        <value>DivyaTopNQuery</value>
+    </property>
+    <property>
+        <name>dt.operator.result.prop.topic</name>
+        <value>DivyaTopNResult</value>
+    </property>
+    <property>
+        <name>dt.operator.parser.attr.PARTITIONER</name>
+        <value>com.datatorrent.common.partitioner.StatelessPartitioner:4</value>
+    </property>
+    <property>
+        <name>dt.operator.counter.port.input.attr.PARTITION_PARALLEL</name>
+        <value>true</value>
+    </property>
+
+    <!--property>
+        <name>dt.operator.Parser.attr.PARTITIONER</name>
+        <value>com.datatorrent.common.partitioner.StatelessPartitioner:4</value>
+    </property-->
+
+</configuration>
+
